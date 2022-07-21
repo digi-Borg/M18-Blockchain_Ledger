@@ -20,15 +20,17 @@ The following illustrations describes utilization of the streamlit app to tests 
 --
 
 * A) 4. Verify the block contents and hashes in the Streamlit drop-down menu. Take a screenshot of the Streamlit application page, which should detail a blockchain that consists of multiple blocks. Include the screenshot in the README.md file for your Challenge repository: 
-![StlitMultiBlock](Images/M18p3_2022-07-20215202.png)  
+![StlitMultiBlock](Images/M18p2_2022-07-20215202.png)  
 
-![StlitMultiBlock2](Images/M18p5_2022-07-20235351.png)
+![StlitMultiBlock2](Images/M18p3_2022-07-20235351.png)
 --
   
 * B) 5. Test the blockchain validation process by using the web interface. Take a screenshot of the Streamlit application page, which should indicate the validity of the blockchain:
-![StlitValidity](Images/M18p4_2022-07-20215455.png)
+![StlitValidity](Images/M18p4_2022-07-21164940.png)
 
----
+![StlitValidity2](Images/M18p5_2022-07-21165039.png) 
+
+___
 ---
 ## Technologies
 
@@ -41,12 +43,16 @@ The software operates on python 3.9 with the installation package imports embedd
 
 Before running the applications open your terminal to install and check for the installations: First navigate to the websites using the links below and follow the download instructions or use the pip installs from the python libraries below. Then verify if the installations have been completed. 
 
-* [python](https://www.python.org/downloads/)
-
+1. Install Anaconda and create your environment; `python` should be installed with Anaconda:
 * [anaconda3](https://docs.anaconda.com/anaconda/install/windows/e) 
 
+2. Verify version in the terminal enter command `python` for information or download:
+* [python](https://www.python.org/downloads/)
+
+3. Install Visual Studio Code, or VS Code, IDE to write the program & run it in Streamlit app: 
 * [VSCode](https://code.visualstudio.com/download) 
 
+4. Install Streamlit to run the python code for the Blockchain Ledger in a GUI as a shareable web app: 
 * [streamlit](https://docs.streamlit.io/library/get-started/installation)
 
 
@@ -79,9 +85,8 @@ python
 pychain.py
 ```
  
+___
 ---
----
-
 ## Contributors
 
 *Provided to you by digi-Borg FinTek*, 
@@ -89,7 +94,8 @@ Dana Hayes: nydane1@gmail.com
 
 ---
 
-## License
+## License 
+
 --
 
 Columbia U. Engineering 
