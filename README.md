@@ -7,19 +7,15 @@
 
 ## Background 
 
-A fintech engineer working at one of the five largest banks in the world is recently promoted to act as the lead developer on the decentralized finance team. The task is to build a blockchain-based ledger system, complete with a user-friendly web interface. The ledger should allow partner banks to conduct financial transactions and to verify the integrity of the data in the ledger.
-
-The FinTech technology in this program utilizes ScikitLearn ML algorithm software tools. The tools are used to build algorithmic models by adjusting inputs for buy, sell or hold signals; these signals are derived from a technical indicator called simple moving average(SMA). SMA's calculate the average stock prices over a rolling time period designating a number of days in time windows. 
-
-Adjusting the ML algorithm inputs one can put together models, tune them, visualize performance on charts, and backtest them for evaluation on a Classification Report. Additionaly, other classes of ML models are available for backtesting and predicting outcomes before applying them to your strategies.  
+A fintech engineer working at one of the five largest banks in the world is recently promoted to act as the lead developer on the decentralized finance team. The task is to build a blockchain-based ledger system, complete with a user-friendly web interface. The ledger should allow partner banks to conduct financial transactions and to verify the integrity of the data in the ledger.  
 
 ---
 
 ## Evaluation Results
 
-The following illustrations describes the utilizing the streamlit app to tests the blockchain ledgers storage of records. 
+The following illustrations describes utilization of the streamlit app to tests the blockchain ledgers storage of records and verification. 
 
-* The user interface of the steamlit app for 'Sender', 'Receiver' and 'Amount' inputs with 'Add Block and "Validation' buttons to activate the blockchain ledger process:
+* The web based GUI of the steamlit app for 'Sender', 'Receiver' and 'Amount' inputs with 'Add Block and "Validation' buttons to activate the blockchain ledger process:
 ![StlitUI](Images/M18p1_2022-07-20213046.png) 
 --
 
@@ -31,15 +27,7 @@ The following illustrations describes the utilizing the streamlit app to tests t
   
 * B) 5. Test the blockchain validation process by using the web interface. Take a screenshot of the Streamlit application page, which should indicate the validity of the blockchain:
 ![StlitValidity](Images/M18p4_2022-07-20215455.png)
---
-
-* C) Streamlit video of testing the blockchain validation process by using the PyChain ledger:
-![StVid](Images/M18vid-streamlit-pychain-2022-07-20.webm)
-
- 
- ### **Tune the Baseline Trading Algorithm**
- 1.  
-
+---
 ___
 
 ## Technologies
@@ -51,7 +39,7 @@ The software operates on python 3.9 with the installation package imports embedd
 
 ## Installation Guide
 
-Before running the applications open your terminal to install and check for your installations. First navigate to the download instructions using the links below. Then verify if the installations have been completed. 
+Before running the applications open your terminal to install and check for the installations: First navigate to the websites using the links below and follow the download instructions or use the pip installs from the python libraries below. Then verify if the installations have been completed. 
 
 * [python](https://www.python.org/downloads/)
 
@@ -62,35 +50,28 @@ Before running the applications open your terminal to install and check for your
 * [streamlit](https://docs.streamlit.io/library/get-started/installation)
 
 
-
 ```
 python libraries
-pip install web3==5.17                         # connects and performs operations on Ethereum-based blockchains.
-pip install eth-tester==0.5.0b3                # provides access to the tools to test Ethereum applications.
-pip install mnemonic                           # generates BIP-39 standard 12 or 24-word mnemonic seed phrases.
-pip install bip44                              # derives hierarchical deterministic wallets from a seed phrase.
+pip install streamlit                              # Python library for building web interfaces for Python apps.
 ```
 ```
 import pandas as pd
-import streamlit as st                             # Python library for building web interfaces for Python apps from dataclasses import dataclass
-from typing import Any, List
-import datetime as datetime
-import pandas as pd
-import hashlib                                   
+import streamlit as st                        # Python library for building web interfaces for Python apps 
+from dataclasses import dataclass             # tells Python what kind of data to store in the data class
+from typing import Any, List                  # allows versatility to change the type of data in the block  
+import datetime as datetime                   # Python date/time stamp: %hrs, %mins, and %secs. 
+import hashlib                                # provides access to cryptography functions to validate block data
 ```
-
+___
 ---
 # Usage
 
-This application is launched from the VSCode terminal utilizing Pandas and scikitlearn `StandardScaler` to preprocess data for categorical variables in the ML algorithm model computations. Scikit ML models are tunable by adjusting input features to find parameters that result in the best outcomes for different trading strategies and adapt to market environments. While `classification_report` illustrates the evaluation metrics such as accuracy, precision and recall.    
+This application is launched from the VSCode terminal utilizing the above imported Python libraries and tools.  The program is developed in VSCode using python language **.py** file to build the Blockchain ledger for transaction verification of the data in the ledger. The user of the program application operates through the Streamlit web app that provides functionality to create blocks, perform the proof of work consensus protocol, and validate blocks in the chain.     
 
-The program is developed in VSCode using python language **.py** file. The Python library makes it possible to utilize pandas, numpy and pathlib to build this Blockchain ledger for transaction verification. The design applies the model-fit-predict process to make a binary classification of whether a startup is successful or not.
+To run the Streamlit application, open a new terminal and navigate to the directory that contains our `pychain.py` file, and then run the following command `streamlit run app.py`.
  
-
-![Tune_SMAs](Images/Adjst-SMA_2022-06-26180534.png)
-![Adjust_TimeLgth](Images/Adjst-TimeLgth2022-06-26180625.png) 
-![SVC_CRpt3M4/100](Images/SVC_CRpt3M4I100_2022-06-25005330.png) 
-
+A Streamlit video of testing the blockchain validation process is demonstatrated in 
+[Streamlit Screencast Video](Images/M18vid-streamlit-pychain-2022-07-20.webm). Please locate `M18vid-streamlit-pychain-2022-07-20.webm` video file in the Images folder and run it if the former link doesn't function. 
 
 
 ```
@@ -98,7 +79,7 @@ python
 pychain.py
 ```
  
-
+---
 ---
 
 ## Contributors
@@ -109,8 +90,12 @@ Dana Hayes: nydane1@gmail.com
 ---
 
 ## License
-Columbia U. Engineering 
 --
+
+Columbia U. Engineering 
+
+--
+
 [BSD 2-Clause LicenseCopyright (c) 2022, digi-Borg
 All rights reserved.](/LICENSE)
 
