@@ -2,7 +2,7 @@
 
 ![M18ReadMeTitle](./Images/M18ReadMe_2022-07-20023454.png)  
 
-*"Developing a Blockchain ledger for financial transactions with counterparty financial institutions for data verification."* 
+*"Developing a Blockchain ledger that verifies financial transaction data with counterparty financial institutions."* 
 
 
 ## Background 
@@ -27,12 +27,12 @@ The following illustrations describes utilization of the streamlit app to tests 
   
 * B) 5. Test the blockchain validation process by using the web interface. Take a screenshot of the Streamlit application page, which should indicate the validity of the blockchain:
 ![StlitValidity](Images/M18p4_2022-07-20215455.png)
----
-___
 
+---
+---
 ## Technologies
 
-The software operates on python 3.9 with the installation package imports embedded with Anaconda3 installation. The application was developed in VSCode 1.69.2, using the python 3.10 language and Streamlit v1.10.0. Below are installation sites and libraries for imported tools to run the program.  The application for GUI uses Streamlit to create and run the blockchain ledger and validate it. 
+The software operates on python 3.9 with the installation package imports embedded with Anaconda3 installation. The application was developed in VSCode 1.69.2, using the python 3.10 language and Streamlit v1.10.0. Below are installation sites and libraries for imported tools to run the program.  The application for GUI uses Streamlit to create and run the blockchain ledger, and validate it. 
 
 
 ---
@@ -52,7 +52,7 @@ Before running the applications open your terminal to install and check for the 
 
 ```
 python libraries
-pip install streamlit                              # Python library for building web interfaces for Python apps.
+pip install streamlit                         # Python library for building web interfaces for Python apps.
 ```
 ```
 import pandas as pd
