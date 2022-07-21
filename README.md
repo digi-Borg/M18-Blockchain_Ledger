@@ -17,30 +17,34 @@ Adjusting the ML algorithm inputs one can put together models, tune them, visual
 
 ## Evaluation Results
 
-The following illustrations describes the utilizing the streamlit app to tests the blockchain ledgers storage of records. To analyze and conclude each model’s performance it's Cumulative Returns chart is visualized and Classifier Report are evaluated. The first 4 models are baseline set at 3 month time with SMA short-window @4days and long-window @100days for initial comparison.
+The following illustrations describes the utilizing the streamlit app to tests the blockchain ledgers storage of records. 
+
+* The user interface of the steamlit app for 'Sender', 'Receiver' and 'Amount' inputs with 'Add Block and "Validation' buttons to activate the blockchain ledger process:
+![StlitUI](Images/M18p1_2022-07-20213046.png) 
+--
 
 * A) 4. Verify the block contents and hashes in the Streamlit drop-down menu. Take a screenshot of the Streamlit application page, which should detail a blockchain that consists of multiple blocks. Include the screenshot in the README.md file for your Challenge repository: 
-  ![StlitMultiBlock](Images/M18p2_2022-07-20215202.png)  
+![StlitMultiBlock](Images/M18p3_2022-07-20215202.png)  
+
+![StlitMultiBlock2](Images/M18p5_2022-07-20235351.png)
+--
   
-* B) Test the blockchain validation process by using the web interface. Take a screenshot of the Streamlit application page, which should indicate the validity of the blockchain:
- ![StlitValidity](Images/M18p3_2022-07-20215455.png)
+* B) 5. Test the blockchain validation process by using the web interface. Take a screenshot of the Streamlit application page, which should indicate the validity of the blockchain:
+![StlitValidity](Images/M18p4_2022-07-20215455.png)
+--
 
-* 3) Streamlit video of testing the blockchain validation process by using the PyChain ledger:
- ![StVid](Images/M18vid-streamlit-pychain-2022-07-20.webm)
+* C) Streamlit video of testing the blockchain validation process by using the PyChain ledger:
+![StVid](Images/M18vid-streamlit-pychain-2022-07-20.webm)
 
-* 4) DecisionTreeClassifier Model Results:
- ![DT_SMA4/100](Images/DT_CR3M4I100_2022-06-24234028.png) 
  
  ### **Tune the Baseline Trading Algorithm**
- 1. Tune the training algorithm by adjusting the size of the training dataset. To do so, slice your data into different periods. Rerun the notebook with the updated parameters. Answer the following question: What impact resulted from increasing or decreasing the training window? 
- With the adjustments for the `SVC` model from 3months,SMA 4/100 to 6M, SMA 4/100 showed outstanding improvement in results. The 6M,SMA 4/100 was the best performer posting cumulative returns of 1.841664 vs 1.5176 shorter 3 mos. time frame and besting 'Actual Returns' at 1.5604. 
-![SVC_SMA6M4/100](Images/SVC_CR6M4I1002022-06-26215537.png)   
+ 1.  
 
 ___
 
 ## Technologies
 
-The software operates on python 3.9 with the installation package imports embedded with Anaconda3 installation. Pandas, NumPy, hvplot, Matplotlib and scikitlearn are libraries for imported tools this program uses to build the application to analyze stock prices and set decision signals of when to buy and sell shares.  The application tools that you need for this module to construct models to perform ML algorithms are `SVC`, `LogisticRegression`, `AdaBoostClassifier`, `DecisionTreeClassifier`.  Please reference the formerly named ML algorithm classifiers on the official web site [Supervised Learning for scikit ML Classifiers Install Guide](https://scikit-learn.org/stable/supervised_learning.html) installation and documentation.   
+The software operates on python 3.9 with the installation package imports embedded with Anaconda3 installation. The application was developed in VSCode 1.69.2, using the python 3.10 language and Streamlit v1.10.0. Below are installation sites and libraries for imported tools to run the program.  The application for GUI uses Streamlit to create and run the blockchain ledger and validate it. 
 
 
 ---
@@ -53,9 +57,11 @@ Before running the applications open your terminal to install and check for your
 
 * [anaconda3](https://docs.anaconda.com/anaconda/install/windows/e) 
 
+* [VSCode](https://code.visualstudio.com/download) 
+
 * [streamlit](https://docs.streamlit.io/library/get-started/installation)
 
-* [Ganache](https://www.trufflesuite.com/ganache) 
+
 
 ```
 python libraries
@@ -66,7 +72,7 @@ pip install bip44                              # derives hierarchical determinis
 ```
 ```
 import pandas as pd
-import streamlit as st                                        # returns conditional classification values for from dataclasses import dataclass
+import streamlit as st                             # Python library for building web interfaces for Python apps from dataclasses import dataclass
 from typing import Any, List
 import datetime as datetime
 import pandas as pd
@@ -76,7 +82,7 @@ import hashlib
 ---
 # Usage
 
-This application is launched from web-based Jupyter notebook utilizing Pandas and scikitlearn `StandardScaler` to preprocess data for categorical variables in the ML algorithm model computations. Scikit ML models are tunable by adjusting input features to find parameters that result in the best outcomes for different trading strategies and adapt to market environments. While `classification_report` illustrates the evaluation metrics such as accuracy, precision and recall.    
+This application is launched from the VSCode terminal utilizing Pandas and scikitlearn `StandardScaler` to preprocess data for categorical variables in the ML algorithm model computations. Scikit ML models are tunable by adjusting input features to find parameters that result in the best outcomes for different trading strategies and adapt to market environments. While `classification_report` illustrates the evaluation metrics such as accuracy, precision and recall.    
 
 The program is developed in VSCode using python language **.py** file. The Python library makes it possible to utilize pandas, numpy and pathlib to build this Blockchain ledger for transaction verification. The design applies the model-fit-predict process to make a binary classification of whether a startup is successful or not.
  
@@ -103,6 +109,8 @@ Dana Hayes: nydane1@gmail.com
 ---
 
 ## License
-
-Columbia U. Engineering
+Columbia U. Engineering 
+--
+[BSD 2-Clause LicenseCopyright (c) 2022, digi-Borg
+All rights reserved.](/LICENSE)
 
